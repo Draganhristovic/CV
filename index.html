@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
+    <script src="scripts/script.min.js"></script>
+    <script src="lib/materialize/js/materialize.min.js"></script>
+    <title>CV</title>
+</head>
+
+<body>
+    <iframe id="cvPDF" style="display: none" src="files/cv.pdf" frameborder="0"></iframe>
+    <table class="colors">
+        <tbody>
+            <tr>
+                <td class="c1"></td>
+                <td class="c2"></td>
+                <td class="c3"></td>
+                <td class="c4"></td>
+                <td class="c5"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container">
+        <a onclick="printCV()" class="waves-effect waves-light btn green darken-2 print-button"><i class="material-icons print-download">print</i></a>
+        <a  href="files/cv.pdf" download class="waves-effect waves-light btn blue darken-2 download-button"><i class="material-icons print-download">file_download</i></a>
+        <ul class="collapsible">
+            <li>
+                <div id="person" class="kolona collapsible-header">
+                    <a href="#">
+                        <span class="material-icons material-icons-new-style person">person</span>
+                    </a>
+                    <div class="centrirano">
+                        <span class="section-name prva">Profil</span>
+                    </div>
+                </div>
+                <div class="collapsible-body-info">
+                    <div class="row row-without-margin-bottom">
+                        <div class="col s12 m3 xl3">
+                            <img src="images/1.jpg" alt="Dragan Hristovic" />
+                        </div>
+                        <div class="col s12 m9 xl5">
+                            <h1 class="profil-name">
+                                <span class="first-name">Dragan</span>
+                                <span class="last-name">Hristovic</span>
+                            </h1>
+                            <h4 class="profile-position">Web Design</h4>
+                        </div>
+                        <div id="anim" class="col s12 m12 xl4">
+                            <div class="tabela">
+                                <span class="th">Name:</span>
+                                <span class="td">Dragan Hristovic</span>
+                            </div>
+                            <div class="tabela">
+                                <span class="th">Date of birth:</span>
+                                <span class="td">3. August 1991.</span>
+                            </div>
+                            <div class="tabela">
+                                <span class="th">Address:</span>
+                                <span class="td">Spanskih boraca 6, 19000 Zajecar</span>
+                            </div>
+                            <div class="tabela">
+                                <span class="th">Phone:</span>
+                                <span class="td">069/380-89-64</span>
+                            </div>
+                            <div class="tabela">
+                                <span class="th">Email:</span>
+                                <span class="td">
+                                    <a href="mailto:gagi.hristovic@gmail.com">gagi.hristovic@gmail.com</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">
+                    <a href="#">
+                        <span class="material-icons  material-icons-new-style sort">sort</span>
+                    </a>
+                    <span class="background-druga"></span>
+                    <span class="section-name druga">Skills</span>
+                    <span class="material-icons  material-icons-new-style arrow-down"></span>
+                </div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="center col s12 m4">
+                            <h1 class="Software-Skills">Software Skills</h1>
+                            <div class="skillsBox">
+                                <p>HTML5</p>
+                                <p>90%</p>
+                                <div class="skill">
+                                    <div class="skill-level1"></div>
+                                </div>
+                            </div>
+                            <div class="skillsBox">
+                                <p>CSS3</p>
+                                <p>85%</p>
+                                <div class="skill">
+                                    <div class="skill-level2"></div>
+                                </div>
+                            </div>
+                            <div class="skillsBox">
+                                <p>JavaScript</p>
+                                <p>60%</p>
+                                <div class="skill">
+                                    <div class="skill-level3"></div>
+                                </div>
+                            </div>
+                            <div class="skillsBox">
+                                <p>Wordpress</p>
+                                <p>62%</p>
+                                <div class="skill">
+                                    <div class="skill-level4"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">
+                    <a href="#">
+                        <span class="material-icons  material-icons-new-style business ">business_center</span>
+                    </a>
+                    <span class="background-treca"></span>
+                    <span class="section-name treca">Portfolio</span>
+                    <span class="material-icons  material-icons-new-style arrow-down"></span>
+                </div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image materialboxed ">
+                                    <img class="imageIndex"  src="images/IzradaSajtova/1.png ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image materialboxed ">
+                                    <img class="imageIndex"  src="images/IzradaSajtova/2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image materialboxed ">
+                                    <img class="imageIndex"  src="images/IzradaSajtova/5.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image materialboxed ">
+                                    <img class="imageIndex"  src="images/IzradaSajtova/4.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image materialboxed ">
+                                    <img class="imageIndex"  src="images/IzradaSajtova/6.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image materialboxed ">
+                                    <img class="imageIndex"  src="images/IzradaSajtova/3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image materialboxed ">
+                                    <img class="imageIndex"  src="images/IzradaSajtova/7.png">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">
+                    <a href="#">
+                        <span class="material-icons  material-icons-new-style mail">mail</span>
+                    </a>
+                    <span class="background-cetvrta"></span>
+                    <span class="section-name cetvrta">Contacts</span>
+                    <span class="material-icons  material-icons-new-style arrow-down"></span>
+                </div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m12 ">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2874.4272129145565!2d22.29242661557294!3d43.909128579113386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4754749d232b91c3%3A0x7180cf8e802a7439!2z0KjQv9Cw0L3RgdC60LjRhSDQkdC-0YDQsNGG0LAsINCX0LDRmNC10YfQsNGA!5e0!3m2!1ssr!2srs!4v1530446887576"
+                                width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class=" col s12 m8 sc_contact_form">
+                            <h3 class="title">Contact</h3>
+                            <form method="post" action="http://shiftcv.themerex.net/wp-admin/admin-ajax.php">
+                                <div class="field">
+                                    <label for="sc_contact_form_username" class="required">Name</label>
+                                    <input type="text" id="sc_contact_form_username" name="username">
+                                </div>
+                                <div class="field">
+                                    <label for="sc_contact_form_email" class="required">Email</label>
+                                    <input type="text" id="sc_contact_form_email" name="email">
+                                </div>
+                                <div class="field message">
+                                    <label for="sc_contact_form_message" class="required">Your Message</label>
+                                    <textarea id="sc_contact_form_message" name="message"></textarea>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="enter">
+                                        <span>Submit</span>
+                                    </a>
+                                </div>
+                            </form>
+                            <div class="result sc_infobox"></div>
+                        </div>
+                        <img class="date-img" src="images/3.png">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('.materialboxed');
+var instances = M.Materialbox.init(elems);
+});
+</script>
+</html>
