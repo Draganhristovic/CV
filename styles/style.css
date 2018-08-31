@@ -222,6 +222,7 @@ li.active>div>.background-druga {
     width: 160px !important;
     height:60px !important;
     position: absolute;
+    margin-left: -11px;
     margin-top: -15px !important;
     border-bottom-right-radius:  20px !important;
     border-top-right-radius: 20px !important;
