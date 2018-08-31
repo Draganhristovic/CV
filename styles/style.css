@@ -23,8 +23,10 @@ body {
 .c5 {
     background: #e82c0c;
 }
+.iconica {
+    margin-left: -75px !important;
+}
 .material-icons-new-style {
-    margin-left: -75px;
     width:60px; 
     height: 59px;
     padding-top: 15px;
@@ -182,13 +184,12 @@ img {
     width: 160px !important;
     height:60px !important;
     position: absolute;
-    margin-left: -11px;
     margin-top: -15px !important;
     border-bottom-right-radius:  20px !important;
     border-top-right-radius: 20px !important;
 }
 
-li.active>div>.background-druga {
+li.active>div>div>.background-druga {
     transform: scaleX(1);
 }
 
@@ -222,13 +223,12 @@ li.active>div>.background-druga {
     width: 160px !important;
     height:60px !important;
     position: absolute;
-    margin-left: -11px;
     margin-top: -15px !important;
     border-bottom-right-radius:  20px !important;
     border-top-right-radius: 20px !important;
 }
 
-li.active>div>.background-treca {
+li.active>div>div>.background-treca {
     transform: scaleX(1);
 }
 
@@ -265,13 +265,12 @@ li.active>div>.background-treca {
     width: 160px !important;
     height:60px !important;
     position: absolute;
-    margin-left: -11px;
     margin-top: -15px !important;
     border-bottom-right-radius:  20px !important;
     border-top-right-radius: 20px !important;
 }
 
-li.active>div>.background-cetvrta {
+li.active>div>div>.background-cetvrta {
     transform: scaleX(1);
 }
 
