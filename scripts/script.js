@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+
+    animirajIliVrati();
 });
 
 document.addEventListener("DOMContentLoaded", function () {
