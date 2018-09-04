@@ -78,7 +78,7 @@ ul {
     padding-top: 1px !important;
     border: 2px solid #5a5a5a !important;
     border-radius: 50%;
-    z-index: 9999 !important;
+    z-index: 1 !important;
 }
 li>div>div>.arrow-down:after {
     content: "expand_more";
@@ -135,7 +135,7 @@ li.active>div>div>.arrow-down:after {
     margin-right: 0 !important;
 }
 
-img {
+.slika {
     border-radius: 20px;
     height: 20% !important;
     margin-top: 10px;   
@@ -150,9 +150,9 @@ img {
 
 .profile-position {
     color:#4ca5d0;
-    margin-left: 50px;
+    
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center;
 }
 .td {
     color:#4ca5d0  
@@ -160,7 +160,6 @@ img {
 .tabela {
     color:white;
     width: 100%;
-    height: 100%;
 }
 .animacija > .tabela :active {
     transform-origin: 100% 100%;
@@ -348,7 +347,7 @@ textarea {
     text-align: center;
 }
 .skillsBox {
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
     margin: 20px 0;
 }
@@ -419,6 +418,8 @@ textarea {
 }
 
 #anim {
+    display: flex; 
+    justify-content: center;
     margin-top: 35px !important;
     margin-bottom: 25px !important;
     text-align: center !important;
@@ -436,6 +437,9 @@ textarea {
         width: 50% !important;
         text-align: center !important;
     }
+    .centrirano {
+        margin-left: 100px !important;
+    }
     .profile-position {
         text-align: center !important;
     }
@@ -448,6 +452,12 @@ textarea {
     }
     .profile-position {
         text-align: center !important;
+    }
+    .text {
+        margin-left: -74px !important;
+    }
+    .centrirano {
+        margin-left: 100px !important;
     }
     .background-prva, .background-druga, .background-treca, .background-cetvrta {
         width: calc(85% - 62px) !important;
@@ -475,10 +485,10 @@ textarea {
     }
     .green, .darken-2 {
         border-top-left-radius: 0px !important;
-        border-top-right-radius: 00px !important;
+        border-top-right-radius: 0px !important;
         border-bottom-left-radius: 0px !important;
         border-bottom-right-radius: 0px !important;
-        left: 0px !important;
+        left: 2px !important;
         z-index: 1;
     }
     
@@ -487,7 +497,7 @@ textarea {
         border-top-right-radius: 0px !important;
         border-bottom-left-radius: 0px !important;
         border-bottom-right-radius: 0px !important;
-        left: 64px !important;
+        left: 65px !important;
     }
     
     .arrow-down {
@@ -511,7 +521,7 @@ textarea {
     }
 }    
 
-@media  (max-width: 1501px) {
+@media  (max-width: 1201px) {
     #anim {
         width: auto;
     }
