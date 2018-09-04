@@ -150,9 +150,7 @@ li.active>div>div>.arrow-down:after {
 
 .profile-position {
     color:#4ca5d0;
-    
     margin-bottom: 15px;
-    text-align: center;
 }
 .td {
     color:#4ca5d0  
@@ -518,6 +516,25 @@ textarea {
     .arrow-down {
         position: absolute;
         right: calc(5% + 20px);
+        border-color: white !important;
+        color: white !important;
+    }
+    .skillsBox p {
+        color: #fff;
+        font-family: bold;
+        padding: 0;
+        margin: 0 0 10px;
+    }
+    .skillsBox p:nth-child(2) {
+        float: right !important;
+        position: relative;
+        top:-30px;
+    }
+    .centrirano {
+        margin-left: 50px !important;
+    }
+    .slika {
+        margin-left: -5px !important;
     }
 }    
 
