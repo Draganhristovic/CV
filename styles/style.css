@@ -306,26 +306,35 @@ label.required::after {
 }
 input[type=text] {
     border: 1px solid #e5e5e5 !important;
-    background-color: #1d1c1c;   
+    background-color: #1d1c1c;
+    color: white !important; 
+}
+input[type=email] {
+    border: 1px solid #e5e5e5 !important;
+    background-color: #1d1c1c;
+    color: white !important; 
 }
 textarea {
-    outline-color: #ddd;
+    outline-color: white;
+    color: #ddd;
+    height: 100px !important;
 }
-.enter {
-    border-color: #3b3b3b;
-    background: #3b3b3b;
-    color: #646464;
+input[type=submit] {
+    
+    background: #3a3a3a;
+    color: white;
     padding: 5px 12px 6px;
     font-size: 14px;
     line-height: 17px;
     text-decoration: none;
     font-weight: 700;
     border-radius: 2px;
-    border: 2px solid #3b3b3b;
+    border: 2px solid #565555;
     margin-left: 9px;
 }
-.enter:hover {
-    background: #222222;
+input[type=submit]:hover {
+    background: #2c2b2b;
+    outline-color: rgb(102, 98, 98) !important;
 }
 
 .date-img {
