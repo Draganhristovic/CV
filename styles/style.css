@@ -89,7 +89,7 @@ li.active>div>div>.arrow-down:after {
 }
 
 .arrow-down:hover {
-    background: #5a5a5a !important;
+    background: white !important;
     color: #363535 !important;
 }
 .person {
@@ -342,7 +342,6 @@ textarea {
 .Software-Skills {
     font-size: 30px;
     color: #fff;
-    text-align: center;
 }
 .skillsBox {
     width: 50%;
@@ -441,6 +440,9 @@ textarea {
     .profile-position {
         text-align: center !important;
     }
+    .left {
+        text-align: left !important;
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -501,6 +503,9 @@ textarea {
     .arrow-down {
         border-radius: 50% !important;
     }
+    .left {
+        text-align: left !important;
+    }
 }   
 @media screen and (max-width: 600px) {
     .background-prva, .background-druga, .background-treca, .background-cetvrta {
@@ -519,7 +524,11 @@ textarea {
         border-color: white !important;
         color: white !important;
     }
+    .arrow-down:hover {
+        background: white !important;
+    }
     .skillsBox p {
+        text-align: left !important;
         color: #fff;
         font-family: bold;
         padding: 0;

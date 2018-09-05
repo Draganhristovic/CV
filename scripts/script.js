@@ -50,10 +50,6 @@ function animirajIliVrati() {
     animirano = !animirano;
 }
 
-function printCV() {
-    document.getElementById("cvPDF").contentWindow.postMessage("print", "*");
-}
-
 function downloadCV() {
     alert("CV se preuzima");
 }
