@@ -213,23 +213,21 @@
                         </div>  
                         <div class=" col s12 m8 sc_contact_form">
                             <h3 class="title">Contact</h3>
-                            <form method="post" action="http://shiftcv.themerex.net/wp-admin/admin-ajax.php">
+                            <form method="post" action="https://formspree.io/hristovicdragan@gmail.com">
                                 <div class="field">
                                     <label for="sc_contact_form_username" class="required">Name</label>
-                                    <input type="text" id="sc_contact_form_username" name="username">
+                                    <input type="text" id="sc_contact_form_username" name="name">
                                 </div>
                                 <div class="field">
                                     <label for="sc_contact_form_email" class="required">Email</label>
-                                    <input type="text" id="sc_contact_form_email" name="email">
+                                    <input type="email" id="sc_contact_form_email" name="_replyto">
                                 </div>
                                 <div class="field message">
                                     <label for="sc_contact_form_message" class="required">Your Message</label>
                                     <textarea id="sc_contact_form_message" name="message"></textarea>
                                 </div>
-                                <div class="button">
-                                    <a href="#" class="enter">
-                                        <span>Submit</span>
-                                    </a>
+                                    <div class="button">
+                                    <input type="submit" value="Send">
                                 </div>
                             </form>
                             <div class="result sc_infobox"></div>
