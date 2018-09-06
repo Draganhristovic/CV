@@ -2,17 +2,14 @@ var animirano = false;
 
 document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, {
-        onOpenEnd: function () {
-            document.querySelector("li.active").scrollIntoView({ behavior: "smooth" , block: "start",inline: "nearest" });
-        }
-    });
 
     var instances = M.Collapsible.init(elems, {
         onOpenEnd: function (el) {
+            document.querySelector("li.active").scrollIntoView({ behavior: "smooth" , block: "start",inline: "nearest" });
+
             var sb = el.querySelectorAll(".skillsBox>.skill");
 
-            if (sb.length > 0) {
+            if (sb != undefined && sb != null && sb.length > 0) {
                 var i;
                 for (i = 0; i < sb.length; i++) {
                     sb[i].children[0].classList.add("skill-anim");
@@ -23,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         onCloseEnd: function (el) {
             var sb = el.querySelectorAll(".skillsBox>.skill");
 
-            if (sb.length > 0) {
+            if (sb != undefined && sb != null && sb.length > 0) {
                 var i;
                 for (i = 0; i < sb.length; i++) {
                     sb[i].children[0].classList.remove("skill-anim");
