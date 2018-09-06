@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems, {
         onOpenEnd: function () {
-            document.querySelector("li.active").scrollIntoView({ behavior: "smooth" });
+            document.querySelector("li.active").scrollIntoView({ behavior: "smooth" , block: "start" });
         }
     });
 
