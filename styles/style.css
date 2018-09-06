@@ -301,7 +301,6 @@ label.required::after {
 }
 .field {
     line-height: 20px;
-    padding: 7px 10px 8px !important;
     color: white;
 }
 input[type=text] {
@@ -317,7 +316,7 @@ input[type=email] {
 textarea {
     outline-color: white;
     color: #ddd;
-    height: 100px !important;
+    height: 90px !important;
 }
 input[type=submit] {
     
@@ -338,11 +337,10 @@ input[type=submit]:hover {
 }
 
 .date-img {
-    margin-top: 50px !important;
-    margin-left: 40px;
+    margin-top: 101px !important;
     background: white;
     height: 250px !important;
-    text-align: center;
+    float: right !important;
 }
 .center {
     position: relative;
@@ -440,7 +438,11 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 992px) {
     .col  {
-        width: 50% !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .qr-code{
+        width: 100% !important;
         text-align: center !important;
     }
     .centrirano {
@@ -455,8 +457,9 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 760px) {
-    .col  {
-        width: 100% !important;
+    
+    .qr-code {
+        width: 60% !important;
         text-align: center !important;
     }
     .profile-position {
@@ -517,6 +520,7 @@ input[type=submit]:hover {
     }
 }   
 @media screen and (max-width: 600px) {
+    
     .background-prva, .background-druga, .background-treca, .background-cetvrta {
         width: calc(90% - 62px) !important;
         border-bottom-right-radius: 0px !important;
@@ -554,17 +558,29 @@ input[type=submit]:hover {
         margin-left: -5px !important;
     }
 } 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 470px) {
+    
     .date-img {
-        width: 100% !important;
-        margin-top: 50px !important;
-        margin-left: 0px;
+        float: none !important;
     }
 }  
+@media screen and (max-width: 360px) {
+    
+    .date-img {
+        float: none !important;
+        height: 180px !important;
+    }
 
+}
 @media  (max-width: 1201px) {
     #anim {
         width: auto;
     }
+    .qr-code {
+       width: 70% !important;
+       text-align: center !important;
+    }
 }
+
+
 
