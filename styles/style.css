@@ -319,10 +319,10 @@ textarea {
     height: 90px !important;
 }
 input[type=submit] {
-    
+    margin-top: 15px;
     background: #3a3a3a;
     color: white;
-    padding: 5px 12px 6px;
+    padding: 8px 17px 9px;
     font-size: 14px;
     line-height: 17px;
     text-decoration: none;
@@ -458,8 +458,8 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 760px) {
     
-    .qr-code {
-        width: 60% !important;
+    qr-code {
+        width: 100% !important;
         text-align: center !important;
     }
     .profile-position {
@@ -520,7 +520,10 @@ input[type=submit]:hover {
     }
 }   
 @media screen and (max-width: 600px) {
-    
+    .qr-code {
+        width: 100% !important;
+        text-align: center !important; 
+    }
     .background-prva, .background-druga, .background-treca, .background-cetvrta {
         width: calc(90% - 62px) !important;
         border-bottom-right-radius: 0px !important;
@@ -557,17 +560,11 @@ input[type=submit]:hover {
     .slika {
         margin-left: -5px !important;
     }
-} 
-@media screen and (max-width: 470px) {
+}   
+@media screen and (max-width: 400px) {
     
     .date-img {
-        float: none !important;
-    }
-}  
-@media screen and (max-width: 360px) {
-    
-    .date-img {
-        float: none !important;
+        text-align: center !important;
         height: 180px !important;
     }
 
@@ -577,8 +574,11 @@ input[type=submit]:hover {
         width: auto;
     }
     .qr-code {
-       width: 70% !important;
+       width: 100% !important;
        text-align: center !important;
+    }
+    .date-img {
+        float: none !important;
     }
 }
 
