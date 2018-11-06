@@ -459,6 +459,9 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 992px) {
+    .person{
+        margin-top: -14px !important;
+    }
     .col  {
         width: 100% !important;
         text-align: center !important;
